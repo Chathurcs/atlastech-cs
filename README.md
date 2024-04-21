@@ -1,3 +1,3 @@
 # atlastech-cs
 This is my first repo
-This is my second update. Testing Git Pull.
+This is my second update. Testing git pull.
