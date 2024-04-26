@@ -1,0 +1,16 @@
+#!/bin/bash
+#number 7
+echo "Please enter your name:"
+    read name
+echo "Please enter your age:"
+read age
+echo "Please enter your favorite food:"
+    read food
+echo "Please enter your favorite sport:"
+    read sport
+echo "Please enter your favorite color:"
+    read color
+years_left=$(( 50 - age ))
+##number 8
+echo "Hello, my name is $name and I am $age years old. My favorite food to eat is $food, and my favorite sport is $sport. My favorite color is $color."
+echo "You have $years_left years left until you are 50!"
