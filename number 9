@@ -1,0 +1,23 @@
+#!/bin/bash
+#number 7
+echo "Please enter your name:"
+    read name
+echo "Please enter your age:"
+    read age
+echo "Please enter your favorite food:"
+    read food
+echo "Please enter your favorite sport:"
+read sport
+echo "Please enter your favorite color:"
+    read color
+years_left=$(( 50 - age ))
+##number 8
+echo "Hello, my name is $name and I am $age years old. My favorite food to eat is $food, and my favorite sport is $sport. My favorite color is $color."
+echo "You have $years_left years left until you are 50!"
+##number 9
+echo "what is your favorite basketball team?:'"
+read basketball_team
+if [[ $basketball_team = "knicks" ]]; then echo "Go Knicks!"
+elif [[ $basketball_team = "warriors" || $basketball_team = "lakers" ]]; then echo "They're an okay team."
+else
+echo "That team stinks!"
