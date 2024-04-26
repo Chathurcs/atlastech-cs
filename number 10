@@ -1,0 +1,19 @@
+#!/bin/bash
+## script to create user account and file for each friend
+create_friend_user() {
+    local friend_name=$1
+    sudo useradd -m "$friend_name"  # Create user account with home directory
+sudo -u "$friend_name" touch "/home/$friend_name/friendfile"  # Create file
+in user's home directory
+    echo "User $friend_name created, and friendfile created in
+/home/$friend_name"
+}
+## ask the user to enter the names of their three friends
+echo "what are the names of 3 friends:"
+## Loop to read names of three friends from the user
+for ((i=1; i<=3; i++)); do
+    echo "Friend $i:"
+    read friend_name
+    create_friend_user "$friend_name"  # Call function to create user account
+and file for each friend
+done
